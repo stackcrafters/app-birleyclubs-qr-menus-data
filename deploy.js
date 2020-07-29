@@ -2,7 +2,7 @@
 const execSync = require('child_process').execSync;
 const fs = require('fs');
 
-const FILE_S3_BUCKET = 'stackcrafters-dev-assets';
+const FILE_S3_BUCKET = 'stackcrafters-sc-web-assets-dev';
 const DATA_FILE = 'data.json';
 const LOCAL_ASSET_PATHS = "annabels/*";
 const S3_PATH_PREFIX = "518f6460-1f14-4d4e-8b23-cc5871634f80/";
@@ -35,29 +35,30 @@ if(res.length > 0){
     console.log(`updating deployment ${deployedRev}`)
 }
 else{
-    deployedRev = execSync('git rev-list --max-parents=0 HEAD').toString().trim();
+    deployedRev = execSync('git rev-list HEAD | tail -n 1').toString().trim();
     console.log(`updating, no previous deployment (${deployedRev})`)
 }
 
-const fileListStr = execSync(`git diff --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf)$" || echo ''`).toString();
+const fileListStr = execSync(`git diff --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf)$" || echo ''`).toString().trim();
 if(fileListStr.length === 0){
     console.log('no files found to update');
     process.exit(0);
 }
 
 const fileHashLookup = {};
-const allFiles = execSync(`find -E ${LOCAL_ASSET_PATHS} -regex ".*\\\\.(jpg|png|pdf)"`).toString();
-
+const allFiles = execSync(`find ${LOCAL_ASSET_PATHS} -regextype egrep -regex ".*\\\\.(jpg|png|pdf)"`).toString();
+console.log('allFiles', allFiles)
 allFiles.trim().split('\n').forEach(f => {
     fileHashLookup[f] = execSync(`git hash-object ${f} | cut -c1-7`).toString().trim();
 });
+console.log('fileHashLookup', fileHashLookup)
 
 const fileDestLookup = Object.entries(fileHashLookup).reduce((acc, [f, h]) => {
     const file = /(.*)\.(.*)$/.exec(f);
     acc[f] = `${S3_PATH_PREFIX}${file[1]}.${h}.${file[2]}`;
     return acc;
 }, {});
-// console.log(fileDestLookup)
+console.log('fileDestLookup', fileDestLookup)
 
 //copy changed files to s3
 fileListStr.trim().split('\n').forEach(f => {
