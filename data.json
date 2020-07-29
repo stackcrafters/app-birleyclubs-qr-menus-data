@@ -1,0 +1,648 @@
+{
+  "theme": {
+    "palette": {
+      "primary": {
+        "main": "#00873e"
+      },
+      "secondary": {
+        "main": "#FFFFFF"
+      },
+      "error": {
+        "main": "#CB4C3F"
+      },
+      "background": {
+        "default": "#FFFFFF",
+        "page": "#FFFFFF"
+      }
+    }
+  },
+  "templates": {
+    "default": {
+      "components": [
+        {
+          "type": "Box",
+          "key": "QSKUQU55SMe",
+          "components": [
+            {
+              "type": "Block",
+              "name": "AppBar",
+              "key": "hApsAdirMNC"
+            },
+            {
+              "type": "Page",
+              "key": "Zo9GMYMm4mP"
+            }
+          ]
+        },
+        {
+          "type": "Block",
+          "name": "Footer",
+          "key": "vIibekTP5si"
+        }
+      ]
+    }
+  },
+  "blocks": {
+    "AppBar": [
+      {
+        "type": "AppBar",
+        "position": "fixed",
+        "key": "mBgCZNipgs",
+        "components": [
+          {
+            "type": "Container",
+            "maxWidth": "xs",
+            "key": "OQDF98HOp0",
+            "components": [
+              {
+                "type": "Box",
+                "display": "flex",
+                "justifyContent": "center",
+                "key": "AYvQeidZMc",
+                "components": [
+                  {
+                    "type": "Link",
+                    "to": "/qr/annabels",
+                    "key": "okNwHmBnIC",
+                    "components": [
+                      {
+                        "type": "Img",
+                        "src": "/_assets/annabels/images/annabels-logo.png",
+                        "loading": "eager",
+                        "alt": "Annabel's",
+                        "width": 115,
+                        "key": "33AXO27Nh"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AppBarSpacer",
+        "key": "7HPGlOSLaa"
+      }
+    ],
+    "Footer": [
+      {
+        "type": "Box",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "pt": 6,
+        "pb": 2,
+        "key": "0vqf8NJFfsp",
+        "components": [
+          {
+            "type": "Link",
+            "variant": "caption",
+            "color": "inherit",
+            "href": "https://stackcrafters.com",
+            "gutterBottom": true,
+            "key": "fw7gsmRCEKv",
+            "components": ["Crafted by Stackcrafters"]
+          }
+        ]
+      }
+    ]
+  },
+  "config": {
+    "siteMetadata": {
+      "lang": "en",
+      "titlePostfix": "Annabel's",
+      "defaultDescription": "Arguably one of the most elegant clubs in the world, Annabel’s – a Birley Club – has a global reputation that has been established over the past five…"
+    },
+    "analytics": {
+      "gaProperty": "UA-171650063-1",
+      "cookieConsent": {
+        "copy": {
+          "summary": "We use cookies to ensure you get the best experience on our website.",
+          "allowButton": "Allow"
+        }
+      }
+    }
+  },
+  "pages": {
+    "/404": {
+      "path": "/404",
+      "template": "default",
+      "title": "404",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "minHeight": 350,
+          "color": "secondary.contrastText",
+          "bgcolor": "secondary.main",
+          "key": "zwlP83Hd4Rg",
+          "components": [
+            {
+              "type": "Box",
+              "py": 4,
+              "key": "4KHyL5gQC11",
+              "components": [
+                {
+                  "type": "Typography",
+                  "variant": "h2",
+                  "align": "center",
+                  "gutterBottom": true,
+                  "key": "aDOWZHopURC",
+                  "components": ["404"]
+                },
+                {
+                  "type": "Typography",
+                  "variant": "h4",
+                  "align": "center",
+                  "gutterBottom": true,
+                  "key": "_NZRlVPzqse",
+                  "components": [
+                    "We are sorry, the page you requested cannot be found."
+                  ]
+                },
+                {
+                  "type": "Typography",
+                  "variant": "h5",
+                  "align": "center",
+                  "gutterBottom": true,
+                  "key": "HJrUURKcVHt",
+                  "components": [
+                    "The URL may be misspelled or the page you're looking for is no longer available."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/annabels": {
+      "path": "/qr/annabels",
+      "template": "default",
+      "title": "Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "sOuPKPqlKw",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "5ar3_wGN5",
+                      "components": ["MENUS"]
+                    }
+                  ]
+                },
+                {
+                  "type": "GridList",
+                  "cellHeight": 180,
+                  "cols": 1,
+                  "items": [
+                    {
+                      "title": "The Garden & Rose Room",
+                      "img": "/_assets/annabels/images/garden_and_rose.jpg",
+                      "to": "/qr/annabels/garden_rose"
+                    },
+                    {
+                      "title": "Elephant Room",
+                      "img": "/_assets/annabels/images/elephant.jpg",
+                      "to": "/qr/annabels/elephant"
+                    },
+                    {
+                      "title": "Matteo’s",
+                      "img": "/_assets/annabels/images/matteos.jpg",
+                      "to": "/qr/annabels/matteos"
+                    },
+                    {
+                      "title": "The Mexican",
+                      "img": "/_assets/annabels/images/mexican.jpg",
+                      "to": "/qr/annabels/mexican"
+                    },
+                    {
+                      "title": "Jungle Bar & Nightclub",
+                      "img": "/_assets/annabels/images/nightclub.jpg",
+                      "to": "/qr/annabels/jungle_bar_nightclub"
+                    },
+                    {
+                      "title": "Humidor & Smoking Terrace",
+                      "img": "/_assets/annabels/images/humidor.jpg",
+                      "to": "/qr/annabels/humidor_smoking_terrace"
+                    }
+                  ],
+                  "key": "Rj7013sC7v"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/annabels/garden_rose": {
+      "path": "/qr/annabels/garden_rose",
+      "template": "default",
+      "title": "The Garden & Rose Room - Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "0gSOXQcLcT",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "1v0SBKNdq6",
+                      "components": ["The Garden & Rose Room"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "Weekday Lunch Menu",
+                      "href": "/_assets/annabels/gr_weekday_lunch_menu.pdf"
+                    },
+                    {
+                      "label": "Afternoon Menu",
+                      "href": "/_assets/annabels/gr_afternoon_menu.pdf"
+                    },
+                    {
+                      "label": "Dinner Menu",
+                      "href": "/_assets/annabels/gr_dinner_menu.pdf"
+                    },
+                    {
+                      "label": "Dessert Menu",
+                      "href": "/_assets/annabels/gr_dessert_menu.pdf"
+                    },
+                    {
+                      "label": "Sunday Roast Menu",
+                      "href": "/_assets/annabels/gr_sunday_lunch_menu.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/annabels/annabels_full_wine_list.pdf"
+                    },
+                    {
+                      "label": "Spirits List",
+                      "href": "/_assets/annabels/gr_sprits_list.pdf"
+                    }
+                  ],
+                  "key": "lUE4VLbodJ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/annabels/elephant": {
+      "path": "/qr/annabels/elephant",
+      "template": "default",
+      "title": "Elephant Room - Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "yTrIlAmL4Y",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "e2bUwgE4Ng",
+                      "components": ["Elephant Room"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "Food Menu & Cocktails",
+                      "href": "/_assets/annabels/elephant_room_menu_v3.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/annabels/annabels_full_wine_list_v2.pdf"
+                    },
+                    {
+                      "label": "Spirits List",
+                      "href": "/_assets/annabels/elephant_room_spirits_list_v1.pdf"
+                    }
+                  ],
+                  "key": "P7iCOZF3Xq"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/annabels/matteos": {
+      "path": "/qr/annabels/matteos",
+      "template": "default",
+      "title": "Matteo's - Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "W65x9vXI65",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "rc8Q-0WsWa",
+                      "components": ["Matteo's"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "A La Carte Menu",
+                      "href": "/_assets/annabels/matteos_menu.pdf"
+                    },
+                    {
+                      "label": "Matteo's Wine List",
+                      "href": "/_assets/annabels/matteos_wine_list.pdf"
+                    },
+                    {
+                      "label": "Matteo's Spirits List",
+                      "href": "/_assets/annabels/matteos_spirits_list.pdf"
+                    },
+                    {
+                      "label": "Dessert Menu",
+                      "href": "/_assets/annabels/matteos_dessert_menu.pdf"
+                    }
+                  ],
+                  "key": "hjRxT80JoZ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/annabels/mexican": {
+      "path": "/qr/annabels/mexican",
+      "template": "default",
+      "title": "The Mexican - Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "RlZymS7Scs",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "UsMPX9g78m",
+                      "components": ["The Mexican"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "Food & Cocktails",
+                      "href": "/_assets/annabels/mexican_menu.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/annabels/annabels_full_wine_list.pdf"
+                    },
+                    {
+                      "label": "Spirits List",
+                      "href": "/_assets/annabels/mexican_sprits_list.pdf"
+                    }
+                  ],
+                  "key": "yYghhkOoAL"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/annabels/jungle_bar_nightclub": {
+      "path": "/qr/annabels/jungle_bar_nightclub",
+      "template": "default",
+      "title": "Jungle Bar & Nightclub - Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "XInI0Ija9eA",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "CO2LWdP9aL",
+                      "components": ["Jungle Bar & Nightclub"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "Food & Cocktails",
+                      "href": "/_assets/annabels/jungle_bar_and_nightclub_menu.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/annabels/annabels_full_wine_list.pdf"
+                    },
+                    {
+                      "label": "Spirits List",
+                      "href": "/_assets/annabels/jungle_bar_spirits_list.pdf"
+                    }
+                  ],
+                  "key": "_cX-NHlUI82"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/annabels/humidor_smoking_terrace": {
+      "path": "/qr/annabels/humidor_smoking_terrace",
+      "template": "default",
+      "title": "Humidor & Smoking Terrace - Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "kDsSkoEGn2w",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "WTe6bGIUA4k",
+                      "components": ["Smoking Terrace"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "Menu",
+                      "href": "/_assets/annabels/rooftop_menu.pdf"
+                    }
+                  ],
+                  "key": "XaX8bKwFsKQ"
+                },
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "mJoPasBFPEi",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "1pFZ1brnBR1",
+                      "components": ["Humidor"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "Cigar Menu",
+                      "href": "/_assets/annabels/cigar_menu.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/annabels/annabels_full_wine_list.pdf"
+                    },
+                    {
+                      "label": "Spirits List",
+                      "href": "/_assets/annabels/humidor_spirits_list.pdf"
+                    }
+                  ],
+                  "key": "wLn_7UH_fTC"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

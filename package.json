@@ -1,0 +1,11 @@
+{
+  "name": "app-birleyclubs-qr-menus-data",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "serve": "serve ."
+  }
+}
