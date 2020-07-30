@@ -105,7 +105,7 @@ const fileSubLookup = Object.entries(fileHashLookup).reduce((acc, [f, h]) => {
 recursivelyReplaceValues(data, fileSubLookup);
 fs.writeFileSync('/tmp/data.json', JSON.stringify(data));
 
-execSync(`aws s3 cp /tmp/data.json s3://${DATA_S3_BUCKET}/${DATA_DEST_PATH}`, {stdio: 'inherit'});
+execSync(`aws s3 cp /tmp/data.json s3://${DATA_S3_BUCKET}/${DATA_DEST_PATH} --metadata-directive REPLACE --cache-control public,max-age=300,must-revalidate`, {stdio: 'inherit'});
 
 execSync('git rev-parse HEAD > deployed-rev');
 execSync(`aws s3 cp deployed-rev s3://${FILE_S3_BUCKET}/${S3_DEPLOYED_REV_KEY}`, {stdio: 'inherit'});

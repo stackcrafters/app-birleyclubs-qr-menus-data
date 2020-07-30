@@ -5,7 +5,7 @@ Menu and asset repository for Birley Clubs QR mini-sites.
 PDF, JPG and PNGs pushed into the site folders will be automatically version hashed and deployed.
 
 ## AWS Deployment IAM Role
-   
+
 ```json5
 {
     "Version": "2012-10-17",
@@ -34,6 +34,5 @@ PDF, JPG and PNGs pushed into the site folders will be automatically version has
 }
 ```
 
-Readme here
 Private readme with env setup
 setup staging 
