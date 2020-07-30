@@ -7,7 +7,7 @@ let args = process.argv.slice(2);
 const env = args[0] || 'dev';
 const tenant = args[1] || '518f6460-1f14-4d4e-8b23-cc5871634f80';
 
-const LOCAL_ASSET_PATHS = 'annabels/* george-club/* marks-club/* harrys-bar/*';
+const LOCAL_ASSET_PATHS = 'static/* annabels/* george-club/* marks-club/* harrys-bar/*';
 
 const DATA_FILE = 'data.json';
 const FILE_S3_BUCKET = `stackcrafters-sc-web-assets-${env}`;
