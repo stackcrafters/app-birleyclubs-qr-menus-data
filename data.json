@@ -4,7 +4,6 @@
       "components": [
         {
           "type": "Box",
-
           "components": [
             {
               "type": "Page"
@@ -31,7 +30,6 @@
       "components": [
         {
           "type": "Box",
-
           "components": [
             {
               "type": "Block",
@@ -62,7 +60,6 @@
       "components": [
         {
           "type": "Box",
-
           "components": [
             {
               "type": "Block",
@@ -97,7 +94,6 @@
       "components": [
         {
           "type": "Box",
-
           "components": [
             {
               "type": "Block",
@@ -278,7 +274,6 @@
                   {
                     "type": "Link",
                     "to": "/qr/marks-club",
-
                     "components": [
                       {
                         "type": "Img",
