@@ -125,7 +125,7 @@
         }
       ]
     },
-    "marksclub": {
+    "marks-club": {
       "theme": {
         "palette": {
           "primary": {
@@ -312,7 +312,7 @@
                 "components": [
                   {
                     "type": "Link",
-                    "to": "/qr/marksclub",
+                    "to": "/qr/marks-club",
                     "key": "okNwHmBnIC",
                     "components": [
                       {
@@ -1020,9 +1020,9 @@
         }
       ]
     },
-    "/qr/marksclub": {
-      "path": "/qr/marksclub",
-      "template": "marksclub",
+    "/qr/marks-club": {
+      "path": "/qr/marks-club",
+      "template": "marks-club",
       "title": "Menus",
       "lang": "en",
       "components": [
