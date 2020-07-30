@@ -2,12 +2,16 @@
 const execSync = require('child_process').execSync;
 const fs = require('fs');
 
-const FILE_S3_BUCKET = 'stackcrafters-sc-web-assets-dev';
+let args = process.argv.slice(2);
+const env = args[0] || 'dev';
+const tenant = args[1] || '518f6460-1f14-4d4e-8b23-cc5871634f80';
+
+const FILE_S3_BUCKET = `stackcrafters-sc-web-assets-${env}`;
 const DATA_FILE = 'data.json';
-const LOCAL_ASSET_PATHS = "annabels/*";
-const S3_PATH_PREFIX = "518f6460-1f14-4d4e-8b23-cc5871634f80/";
+const LOCAL_ASSET_PATHS = 'annabels/*';
+const S3_PATH_PREFIX = `${tenant}/`;
 const S3_DEPLOYED_REV_KEY = `${S3_PATH_PREFIX}deployed-rev`;
-const DATA_S3_BUCKET = 'stackcrafters-sc-web-data-dev';
+const DATA_S3_BUCKET = `stackcrafters-sc-web-data-${env}`;
 const DATA_DEST_PATH = `${S3_PATH_PREFIX}data.json`;
 
 const recursivelyReplaceValues = (obj, replacements) => {
@@ -47,18 +51,18 @@ if(fileListStr.length === 0){
 
 const fileHashLookup = {};
 const allFiles = execSync(`find ${LOCAL_ASSET_PATHS} -regextype egrep -regex ".*\\\\.(jpg|png|pdf)"`).toString();
-console.log('allFiles', allFiles)
+// console.log('allFiles', allFiles)
 allFiles.trim().split('\n').forEach(f => {
     fileHashLookup[f] = execSync(`git hash-object ${f} | cut -c1-7`).toString().trim();
 });
-console.log('fileHashLookup', fileHashLookup)
+// console.log('fileHashLookup', fileHashLookup)
 
 const fileDestLookup = Object.entries(fileHashLookup).reduce((acc, [f, h]) => {
     const file = /(.*)\.(.*)$/.exec(f);
     acc[f] = `${S3_PATH_PREFIX}${file[1]}.${h}.${file[2]}`;
     return acc;
 }, {});
-console.log('fileDestLookup', fileDestLookup)
+// console.log('fileDestLookup', fileDestLookup)
 
 //copy changed files to s3
 fileListStr.trim().split('\n').forEach(f => {
