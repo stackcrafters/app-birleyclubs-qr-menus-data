@@ -13,9 +13,6 @@
         {
           "type": "Block",
           "name": "Footer"
-        },
-        {
-          "type": "CookieConsent"
         }
       ]
     },
@@ -46,9 +43,6 @@
         {
           "type": "Block",
           "name": "Footer"
-        },
-        {
-          "type": "CookieConsent"
         }
       ]
     },
@@ -79,9 +73,6 @@
         {
           "type": "Block",
           "name": "Footer"
-        },
-        {
-          "type": "CookieConsent"
         }
       ]
     },
@@ -116,9 +107,6 @@
         {
           "type": "Block",
           "name": "Footer"
-        },
-        {
-          "type": "CookieConsent"
         }
       ]
     },
@@ -150,9 +138,6 @@
         {
           "type": "Block",
           "name": "Footer"
-        },
-        {
-          "type": "CookieConsent"
         }
       ]
     }
@@ -327,6 +312,9 @@
             "components": ["Crafted by Stackcrafters"]
           }
         ]
+      },
+      {
+        "type": "CookieConsent"
       }
     ]
   },
