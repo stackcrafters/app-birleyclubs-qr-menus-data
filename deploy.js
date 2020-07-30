@@ -23,9 +23,11 @@ const recursivelyReplaceValues = (obj, replacements) => {
             recursivelyReplaceValues(v, replacements);
         }
     });
-    if (obj.href && Object.keys(replacements).indexOf(obj.href) > -1) {
-        obj.href = `${replacements[obj.href]}`;
-    }
+    ['href', 'img'].forEach(prop => {
+        if (obj[prop] && Object.keys(replacements).indexOf(obj[prop]) > -1) {
+            obj[prop] = `${replacements[obj[prop]]}`;
+        }
+    });
 };
 
 let deployedRev;
