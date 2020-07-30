@@ -312,6 +312,9 @@
             "components": ["Crafted by Stackcrafters"]
           }
         ]
+      },
+      {
+        "type": "CookieConsent"
       }
     ]
   },
