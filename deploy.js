@@ -59,31 +59,37 @@ else{
     console.log(`updating, no previous deployment (${deployedRev})`)
 }
 
-const fileListStr = execSync(`git diff --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf)$" || echo ''`).toString().trim();
-if(fileListStr.length === 0){
-    console.log('no files found to update');
+const fileDiffStr = execSync(`git diff --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf)$" || echo ''`).toString().trim();
+const dataDiffStr = execSync(`git diff --name-only ${deployedRev} HEAD | grep "${DATA_FILE}" || echo ''`).toString().trim();
+if(dataDiffStr.length === 0 && fileDiffStr.length === 0){
+    console.log('no changes found to deploy');
     process.exit(0);
 }
 
 const fileHashLookup = {};
-const allFiles = execSync(`find ${LOCAL_ASSET_PATHS} -regextype egrep -regex ".*\\\\.(jpg|png|pdf)"`).toString();
-// console.log('allFiles', allFiles)
-allFiles.trim().split('\n').forEach(f => {
+const allAssetFiles = execSync(`find ${LOCAL_ASSET_PATHS} -regextype egrep -regex ".*\\\\.(jpg|png|pdf)"`).toString();
+// console.log('allAssetFiles', allAssetFiles)
+allAssetFiles.trim().split('\n').forEach(f => {
     fileHashLookup[f] = execSync(`git hash-object ${f} | cut -c1-7`).toString().trim();
 });
 // console.log('fileHashLookup', fileHashLookup)
 
-const fileDestLookup = Object.entries(fileHashLookup).reduce((acc, [f, h]) => {
-    const file = /(.*)\.(.*)$/.exec(f);
-    acc[f] = `${S3_PATH_PREFIX}${file[1]}.${h}.${file[2]}`;
-    return acc;
-}, {});
-// console.log('fileDestLookup', fileDestLookup)
+if(fileDiffStr.length > 0){
+    const fileDestLookup = Object.entries(fileHashLookup).reduce((acc, [f, h]) => {
+        const file = /(.*)\.(.*)$/.exec(f);
+        acc[f] = `${S3_PATH_PREFIX}${file[1]}.${h}.${file[2]}`;
+        return acc;
+    }, {});
+    // console.log('fileDestLookup', fileDestLookup)
 
-//copy changed files to s3
-fileListStr.trim().split('\n').forEach(f => {
-    execSync(`aws s3 cp ${f} s3://${FILE_S3_BUCKET}/${fileDestLookup[f]} --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable`, {stdio: 'inherit'});
-});
+    //copy changed files to s3
+    fileDiffStr.trim().split('\n').forEach(f => {
+        execSync(`aws s3 cp ${f} s3://${FILE_S3_BUCKET}/${fileDestLookup[f]} --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable`, {stdio: 'inherit'});
+    });
+}
+else{
+    console.log('no changed assets, skipping asset s3 sync')
+}
 
 //substitute json data paths
 const data = JSON.parse(fs.readFileSync(DATA_FILE).toString());
