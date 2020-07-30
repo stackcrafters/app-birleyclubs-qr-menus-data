@@ -19,13 +19,14 @@
     "annabels": {
       "theme": {
         "palette": {
-          "primary": {
-            "main": "#00873e"
-          },
-          "secondary": {
-            "main": "#00873e"
-          }
+          "primary": { "main": "#00873e" },
+          "secondary": { "main": "#00873e" }
         }
+      },
+      "siteMetadata": {
+        "lang": "en",
+        "titlePostfix": "Annabel's",
+        "defaultDescription": "Arguably one of the most elegant clubs in the world, Annabel’s – a Birley Club – has a global reputation that has been established over the past five…"
       },
       "components": [
         {
@@ -49,13 +50,14 @@
     "george-club": {
       "theme": {
         "palette": {
-          "primary": {
-            "main": "#2d4091"
-          },
-          "secondary": {
-            "main": "#2d4091"
-          }
+          "primary": { "main": "#2d4091" },
+          "secondary": { "main": "#2d4091" }
         }
+      },
+      "siteMetadata": {
+        "lang": "en",
+        "titlePostfix": "George",
+        "defaultDescription": "George"
       },
       "components": [
         {
@@ -79,17 +81,15 @@
     "harrys-bar": {
       "theme": {
         "palette": {
-          "primary": {
-            "main": "#543825"
-          },
-          "secondary": {
-            "main": "#000000"
-          },
-          "background": {
-            "default": "#fffef2",
-            "page": "#fffef2"
-          }
+          "primary": { "main": "#543825" },
+          "secondary": { "main": "#000000" },
+          "background": { "default": "#fffef2", "page": "#fffef2" }
         }
+      },
+      "siteMetadata": {
+        "lang": "en",
+        "titlePostfix": "Harry's Bar",
+        "defaultDescription": "Harry's Bar"
       },
       "components": [
         {
@@ -113,13 +113,14 @@
     "marks-club": {
       "theme": {
         "palette": {
-          "primary": {
-            "main": "#232856"
-          },
-          "secondary": {
-            "main": "#000000"
-          }
+          "primary": { "main": "#232856" },
+          "secondary": { "main": "#000000" }
         }
+      },
+      "siteMetadata": {
+        "lang": "en",
+        "titlePostfix": "Mark's Club",
+        "defaultDescription": "Mark's Club"
       },
       "components": [
         {
@@ -318,22 +319,21 @@
       }
     ]
   },
-  "config": {
-    "siteMetadata": {
-      "lang": "en",
-      "titlePostfix": "Annabel's",
-      "defaultDescription": "Arguably one of the most elegant clubs in the world, Annabel’s – a Birley Club – has a global reputation that has been established over the past five…"
-    },
-    "analytics": {
-      "gaProperty": "UA-171650063-1",
-      "cookieConsent": {
-        "copy": {
-          "summary": "We use cookies to ensure you get the best experience on our website.",
-          "allowButton": "Allow"
-        }
+
+  "siteMetadata": {
+    "lang": "en",
+    "titlePostfix": "The Birley Clubs"
+  },
+  "analytics": {
+    "gaProperty": "UA-171650063-1",
+    "cookieConsent": {
+      "copy": {
+        "summary": "We use cookies to ensure you get the best experience on our website.",
+        "allowButton": "Allow"
       }
     }
   },
+
   "pages": {
     "/404": {
       "path": "/404",
@@ -385,14 +385,14 @@
     "/": {
       "path": "/",
       "template": "default",
-      "title": "The Birley Clubs",
+      "title": "Home",
       "lang": "en",
       "components": [{ "type": "Redirect", "to": "/qr" }]
     },
     "/qr": {
       "path": "/qr",
       "template": "default",
-      "title": "The Birley Clubs",
+      "title": "Home",
       "lang": "en",
       "components": [
         {
@@ -701,15 +701,15 @@
                   "items": [
                     {
                       "label": "Food Menu & Cocktails",
-                      "href": "/_assets/annabels/elephant_room_menu_v3.pdf"
+                      "href": "/_assets/annabels/elephant_room_menu.pdf"
                     },
                     {
                       "label": "Wine List",
-                      "href": "/_assets/annabels/annabels_full_wine_list_v2.pdf"
+                      "href": "/_assets/annabels/annabels_full_wine_list.pdf"
                     },
                     {
                       "label": "Spirits List",
-                      "href": "/_assets/annabels/elephant_room_spirits_list_v1.pdf"
+                      "href": "/_assets/annabels/elephant_room_spirits_list.pdf"
                     }
                   ]
                 }
