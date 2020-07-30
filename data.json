@@ -305,12 +305,11 @@
         "pb": 2,
         "components": [
           {
-            "type": "Link",
-            "variant": "caption",
-            "color": "inherit",
+            "type": "Button",
+            "size": "small",
             "href": "https://stackcrafters.com",
-            "gutterBottom": true,
-            "components": ["Crafted by Stackcrafters"]
+            "label": "Crafted by Stackcrafters",
+            "style": { "textTransform": "none" }
           }
         ]
       },
