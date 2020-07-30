@@ -6,9 +6,10 @@ let args = process.argv.slice(2);
 const env = args[0] || 'dev';
 const tenant = args[1] || '518f6460-1f14-4d4e-8b23-cc5871634f80';
 
-const FILE_S3_BUCKET = `stackcrafters-sc-web-assets-${env}`;
-const DATA_FILE = 'data.json';
 const LOCAL_ASSET_PATHS = 'annabels/*';
+
+const DATA_FILE = 'data.json';
+const FILE_S3_BUCKET = `stackcrafters-sc-web-assets-${env}`;
 const S3_PATH_PREFIX = `${tenant}/`;
 const S3_DEPLOYED_REV_KEY = `${S3_PATH_PREFIX}deployed-rev`;
 const DATA_S3_BUCKET = `stackcrafters-sc-web-data-${env}`;
@@ -23,7 +24,7 @@ const recursivelyReplaceValues = (obj, replacements) => {
         }
     });
     if (obj.href && Object.keys(replacements).indexOf(obj.href) > -1) {
-        obj.href = `${replacements[obj.href]}`;//FILE_DOMAIN
+        obj.href = `${replacements[obj.href]}`;
     }
 };
 
@@ -66,7 +67,7 @@ const fileDestLookup = Object.entries(fileHashLookup).reduce((acc, [f, h]) => {
 
 //copy changed files to s3
 fileListStr.trim().split('\n').forEach(f => {
-    execSync(`aws s3 cp ${f} s3://${FILE_S3_BUCKET}/${fileDestLookup[f]}`, {stdio: 'inherit'});
+    execSync(`aws s3 cp ${f} s3://${FILE_S3_BUCKET}/${fileDestLookup[f]} --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable`, {stdio: 'inherit'});
 });
 
 //substitute json data paths
