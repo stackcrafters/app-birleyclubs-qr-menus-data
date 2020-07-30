@@ -1,21 +1,4 @@
 {
-  "theme": {
-    "palette": {
-      "primary": {
-        "main": "#00873e"
-      },
-      "secondary": {
-        "main": "#FFFFFF"
-      },
-      "error": {
-        "main": "#CB4C3F"
-      },
-      "background": {
-        "default": "#FFFFFF",
-        "page": "#FFFFFF"
-      }
-    }
-  },
   "templates": {
     "default": {
       "components": [
@@ -24,8 +7,143 @@
           "key": "QSKUQU55SMe",
           "components": [
             {
+              "type": "Page",
+              "key": "Zo9GMYMm4mP"
+            }
+          ]
+        },
+        {
+          "type": "Block",
+          "name": "Footer",
+          "key": "vIibekTP5si"
+        }
+      ]
+    },
+    "annabels": {
+      "theme": {
+        "palette": {
+          "primary": {
+            "main": "#00873e"
+          },
+          "secondary": {
+            "main": "#00873e"
+          }
+        }
+      },
+      "components": [
+        {
+          "type": "Box",
+          "key": "QSKUQU55SMe",
+          "components": [
+            {
               "type": "Block",
-              "name": "AppBar",
+              "name": "AppBar_Annabels",
+              "key": "hApsAdirMNC"
+            },
+            {
+              "type": "Page",
+              "key": "Zo9GMYMm4mP"
+            }
+          ]
+        },
+        {
+          "type": "Block",
+          "name": "Footer",
+          "key": "vIibekTP5si"
+        }
+      ]
+    },
+    "george-club": {
+      "theme": {
+        "palette": {
+          "primary": {
+            "main": "#2d4091"
+          },
+          "secondary": {
+            "main": "#2d4091"
+          }
+        }
+      },
+      "components": [
+        {
+          "type": "Box",
+          "key": "QSKUQU55SMe",
+          "components": [
+            {
+              "type": "Block",
+              "name": "AppBar_GeorgeClub",
+              "key": "hApsAdirMNC"
+            },
+            {
+              "type": "Page",
+              "key": "Zo9GMYMm4mP"
+            }
+          ]
+        },
+        {
+          "type": "Block",
+          "name": "Footer",
+          "key": "vIibekTP5si"
+        }
+      ]
+    },
+    "harrys-bar": {
+      "theme": {
+        "palette": {
+          "primary": {
+            "main": "#543825"
+          },
+          "secondary": {
+            "main": "#000000"
+          },
+          "background": {
+            "default": "#fffef2",
+            "page": "#fffef2"
+          }
+        }
+      },
+      "components": [
+        {
+          "type": "Box",
+          "key": "QSKUQU55SMe",
+          "components": [
+            {
+              "type": "Block",
+              "name": "AppBar_HarrysBar",
+              "key": "hApsAdirMNC"
+            },
+            {
+              "type": "Page",
+              "key": "Zo9GMYMm4mP"
+            }
+          ]
+        },
+        {
+          "type": "Block",
+          "name": "Footer",
+          "key": "vIibekTP5si"
+        }
+      ]
+    },
+    "marksclub": {
+      "theme": {
+        "palette": {
+          "primary": {
+            "main": "#232856"
+          },
+          "secondary": {
+            "main": "#000000"
+          }
+        }
+      },
+      "components": [
+        {
+          "type": "Box",
+          "key": "QSKUQU55SMe",
+          "components": [
+            {
+              "type": "Block",
+              "name": "AppBar_MarksClub",
               "key": "hApsAdirMNC"
             },
             {
@@ -43,7 +161,7 @@
     }
   },
   "blocks": {
-    "AppBar": [
+    "AppBar_Annabels": [
       {
         "type": "AppBar",
         "position": "fixed",
@@ -71,6 +189,138 @@
                         "loading": "eager",
                         "alt": "Annabel's",
                         "width": 115,
+                        "key": "33AXO27Nh"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AppBarSpacer",
+        "key": "7HPGlOSLaa"
+      }
+    ],
+    "AppBar_GeorgeClub": [
+      {
+        "type": "AppBar",
+        "position": "fixed",
+        "key": "mBgCZNipgs",
+        "components": [
+          {
+            "type": "Container",
+            "maxWidth": "xs",
+            "key": "OQDF98HOp0",
+            "components": [
+              {
+                "type": "Box",
+                "display": "flex",
+                "justifyContent": "center",
+                "key": "AYvQeidZMc",
+                "components": [
+                  {
+                    "type": "Link",
+                    "to": "/qr/george-club",
+                    "key": "okNwHmBnIC",
+                    "components": [
+                      {
+                        "type": "Img",
+                        "src": "/_assets/george-club/images/george-club-logo.png",
+                        "loading": "eager",
+                        "alt": "George",
+                        "width": 115,
+                        "key": "33AXO27Nh"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AppBarSpacer",
+        "key": "7HPGlOSLaa"
+      }
+    ],
+    "AppBar_HarrysBar": [
+      {
+        "type": "AppBar",
+        "position": "fixed",
+        "key": "mBgCZNipgs",
+        "style": {
+          "backgroundColor": "#eea16d"
+        },
+        "components": [
+          {
+            "type": "Container",
+            "maxWidth": "xs",
+            "key": "OQDF98HOp0",
+            "components": [
+              {
+                "type": "Box",
+                "display": "flex",
+                "justifyContent": "center",
+                "key": "AYvQeidZMc",
+                "components": [
+                  {
+                    "type": "Link",
+                    "to": "/qr/harrys-bar",
+                    "key": "okNwHmBnIC",
+                    "components": [
+                      {
+                        "type": "Img",
+                        "src": "/_assets/harrys-bar/images/harrysbar-logo.png",
+                        "loading": "eager",
+                        "alt": "Harry's Bar",
+                        "width": 115,
+                        "key": "33AXO27Nh"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "AppBarSpacer",
+        "key": "7HPGlOSLaa"
+      }
+    ],
+    "AppBar_MarksClub": [
+      {
+        "type": "AppBar",
+        "position": "fixed",
+        "key": "mBgCZNipgs",
+        "components": [
+          {
+            "type": "Container",
+            "maxWidth": "xs",
+            "key": "OQDF98HOp0",
+            "components": [
+              {
+                "type": "Box",
+                "display": "flex",
+                "justifyContent": "center",
+                "key": "AYvQeidZMc",
+                "components": [
+                  {
+                    "type": "Link",
+                    "to": "/qr/marksclub",
+                    "key": "okNwHmBnIC",
+                    "components": [
+                      {
+                        "type": "Img",
+                        "src": "/_assets/marks-club/images/markclub-logo.png",
+                        "loading": "eager",
+                        "alt": "MARK'S CLUB",
+                        "width": 200,
                         "key": "33AXO27Nh"
                       }
                     ]
@@ -182,7 +432,7 @@
     },
     "/qr/annabels": {
       "path": "/qr/annabels",
-      "template": "default",
+      "template": "annabels",
       "title": "Menus",
       "lang": "en",
       "components": [
@@ -258,7 +508,7 @@
     },
     "/qr/annabels/garden_rose": {
       "path": "/qr/annabels/garden_rose",
-      "template": "default",
+      "template": "annabels",
       "title": "The Garden & Rose Room - Menus",
       "lang": "en",
       "components": [
@@ -331,7 +581,7 @@
     },
     "/qr/annabels/elephant": {
       "path": "/qr/annabels/elephant",
-      "template": "default",
+      "template": "annabels",
       "title": "Elephant Room - Menus",
       "lang": "en",
       "components": [
@@ -388,7 +638,7 @@
     },
     "/qr/annabels/matteos": {
       "path": "/qr/annabels/matteos",
-      "template": "default",
+      "template": "annabels",
       "title": "Matteo's - Menus",
       "lang": "en",
       "components": [
@@ -449,7 +699,7 @@
     },
     "/qr/annabels/mexican": {
       "path": "/qr/annabels/mexican",
-      "template": "default",
+      "template": "annabels",
       "title": "The Mexican - Menus",
       "lang": "en",
       "components": [
@@ -506,7 +756,7 @@
     },
     "/qr/annabels/jungle_bar_nightclub": {
       "path": "/qr/annabels/jungle_bar_nightclub",
-      "template": "default",
+      "template": "annabels",
       "title": "Jungle Bar & Nightclub - Menus",
       "lang": "en",
       "components": [
@@ -563,7 +813,7 @@
     },
     "/qr/annabels/humidor_smoking_terrace": {
       "path": "/qr/annabels/humidor_smoking_terrace",
-      "template": "default",
+      "template": "annabels",
       "title": "Humidor & Smoking Terrace - Menus",
       "lang": "en",
       "components": [
@@ -637,6 +887,193 @@
                     }
                   ],
                   "key": "wLn_7UH_fTC"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/george-club": {
+      "path": "/qr/george-club",
+      "template": "george-club",
+      "title": "Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "sOuPKPqlKw",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "5ar3_wGN5",
+                      "components": ["MENUS"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "A La Carte",
+                      "href": "/_assets/george-club/a_la_carte.pdf"
+                    },
+                    {
+                      "label": "Weekend Brunch",
+                      "href": "/_assets/george-club/weekend_brunch.pdf"
+                    },
+                    {
+                      "label": "Weekday Breakfast",
+                      "href": "/_assets/george-club/weekday_breakfast.pdf"
+                    },
+                    {
+                      "label": "Dessert Menu",
+                      "href": "/_assets/george-club/dessert.pdf"
+                    },
+                    {
+                      "label": "Children’s Menu",
+                      "href": "/_assets/george-club/childrens_menu.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/george-club/wine_list.pdf"
+                    },
+                    {
+                      "label": "Spirits List",
+                      "href": "/_assets/george-club/bar_spirits.pdf"
+                    }
+                  ],
+                  "key": "lUE4VLbodJ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/harrys-bar": {
+      "path": "/qr/harrys-bar",
+      "template": "harrys-bar",
+      "title": "Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "sOuPKPqlKw",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "5ar3_wGN5",
+                      "components": ["MENUS"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "A La Carte",
+                      "href": "/_assets/harrys-bar/a_la_carte.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/harrys-bar/wine_list.pdf"
+                    }
+                  ],
+                  "key": "lUE4VLbodJ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "/qr/marksclub": {
+      "path": "/qr/marksclub",
+      "template": "marksclub",
+      "title": "Menus",
+      "lang": "en",
+      "components": [
+        {
+          "type": "Box",
+          "display": "flex",
+          "alignItems": "center",
+          "key": "3l2i7qIuQY3",
+          "components": [
+            {
+              "type": "Container",
+              "maxWidth": "xs",
+              "key": "2UeQtMDL01u",
+              "components": [
+                {
+                  "type": "Box",
+                  "my": 3,
+                  "key": "sOuPKPqlKw",
+                  "components": [
+                    {
+                      "type": "Typography",
+                      "variant": "h5",
+                      "align": "center",
+                      "gutterBottom": true,
+                      "key": "5ar3_wGN5",
+                      "components": ["MENUS"]
+                    }
+                  ]
+                },
+                {
+                  "type": "ButtonList",
+                  "spacing": 2,
+                  "items": [
+                    {
+                      "label": "A La Carte",
+                      "href": "/_assets/marks-club/a_la_carte.pdf"
+                    },
+                    {
+                      "label": "Wine List",
+                      "href": "/_assets/marks-club/wine_list.pdf"
+                    },
+                    {
+                      "label": "Spirits List",
+                      "href": "/_assets/marks-club/bar_menu.pdf"
+                    },
+                    {
+                      "label": "Dessert Menu",
+                      "href": "/_assets/marks-club/dessert_menu.pdf"
+                    }
+                  ],
+                  "key": "lUE4VLbodJ"
                 }
               ]
             }
