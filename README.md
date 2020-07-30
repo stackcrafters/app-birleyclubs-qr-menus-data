@@ -33,3 +33,7 @@ PDF, JPG and PNGs pushed into the site folders will be automatically version has
     ]
 }
 ```
+
+Readme here
+Private readme with env setup
+setup staging 

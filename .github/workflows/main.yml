@@ -21,6 +21,7 @@ jobs:
         ref: 'master'
         fetch-depth: 0
     - uses: actions/setup-node@v2.1.1
+    - run: npm install
   
     - name: Run deployment script
       env:

@@ -5,6 +5,9 @@
   "devDependencies": {
     "serve": "^11.3.2"
   },
+  "dependencies": {
+    "shortid": "2.2.15"
+  },
   "scripts": {
     "serve": "serve ."
   }

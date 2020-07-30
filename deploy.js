@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const execSync = require('child_process').execSync;
 const fs = require('fs');
+const shortid = require('shortid');
 
 let args = process.argv.slice(2);
 const env = args[0] || 'dev';
@@ -23,11 +24,23 @@ const recursivelyReplaceValues = (obj, replacements) => {
             recursivelyReplaceValues(v, replacements);
         }
     });
-    ['href', 'img'].forEach(prop => {
+    ['href', 'img', 'src'].forEach(prop => {
         if (obj[prop] && Object.keys(replacements).indexOf(obj[prop]) > -1) {
             obj[prop] = `${replacements[obj[prop]]}`;
         }
     });
+    //add object key if missing
+    if (!obj.key && obj.type) {
+        let c = false;
+        if (obj.components) {
+            c = obj.components;
+            delete obj.components;
+        }
+        obj.key = shortid.generate();
+        if (c) {
+            obj.components = c;
+        }
+    }
 };
 
 let deployedRev;
