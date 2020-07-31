@@ -9,12 +9,12 @@ const tenant = args[1] || "518f6460-1f14-4d4e-8b23-cc5871634f80";
 
 const LOCAL_ASSET_PATHS = "annabels/* george-club/* marks-club/* harrys-bar/*";
 
-const DATA_FILE = "metadata/data.json";
+const META_FOLDER = "metadata/"
 const FILE_S3_BUCKET = `stackcrafters-sc-web-assets-${env}`;
 const S3_PATH_PREFIX = `${tenant}/`;
 const S3_DEPLOYED_REV_KEY = `${S3_PATH_PREFIX}deployed-rev`;
 const DATA_S3_BUCKET = `stackcrafters-sc-web-data-${env}`;
-const DATA_DEST_PATH = `${S3_PATH_PREFIX}data.json`;
+const DATA_DEST_PATH = `${S3_PATH_PREFIX}`;
 
 const recursivelyReplaceValues = (obj, replacements) => {
   Object.values(obj).forEach((v) => {
@@ -24,7 +24,7 @@ const recursivelyReplaceValues = (obj, replacements) => {
       recursivelyReplaceValues(v, replacements);
     }
   });
-  ["href", "img", "src"].forEach((prop) => {
+  ['href', 'img', 'src', 'apple-touch-icon', 'favicon'].forEach((prop) => {
     if (obj[prop] && Object.keys(replacements).indexOf(obj[prop]) > -1) {
       obj[prop] = `${replacements[obj[prop]]}`;
     }
@@ -67,12 +67,12 @@ const fileDiffStr = execSync(
 )
   .toString()
   .trim();
-const dataDiffStr = execSync(
-  `git diff --name-only ${deployedRev} HEAD | grep "${DATA_FILE}" || echo ''`
+const metaDiffStr = execSync(
+  `git diff --name-only ${deployedRev} HEAD | grep "${META_FOLDER}" || echo ''`
 )
   .toString()
   .trim();
-if (dataDiffStr.length === 0 && fileDiffStr.length === 0) {
+if (metaDiffStr.length === 0 && fileDiffStr.length === 0) {
   console.log("no changes found to deploy");
   process.exit(0);
 }
@@ -117,24 +117,31 @@ if (fileDiffStr.length > 0) {
   console.log("no changed assets, skipping asset s3 sync");
 }
 
-//substitute json data paths
-const data = JSON.parse(fs.readFileSync(DATA_FILE).toString());
-
 const fileSubLookup = Object.entries(fileHashLookup).reduce((acc, [f, h]) => {
   const file = /(.*)\.(.*)$/.exec(f);
   acc[`/_assets/${f}`] = `/_assets/${file[1]}.${h}.${file[2]}`;
   return acc;
 }, {});
-
 // console.log(fileSubLookup);
 
-recursivelyReplaceValues(data, fileSubLookup);
-fs.writeFileSync("/tmp/data.json", JSON.stringify(data));
+let metaFiles = execSync(`ls ${META_FOLDER}`).toString().trim().split('\n');
 
-execSync(
-  `aws s3 cp /tmp/data.json s3://${DATA_S3_BUCKET}/${DATA_DEST_PATH} --metadata-directive REPLACE --cache-control public,max-age=300,must-revalidate`,
-  { stdio: "inherit" }
-);
+let tmpFolder = '/tmp/sc-web-deploy/';
+execSync('mkdir -p ' + tmpFolder)
+
+metaFiles.forEach(mf => {
+  //substitute json data paths
+  const data = JSON.parse(fs.readFileSync(META_FOLDER+mf).toString());
+
+  recursivelyReplaceValues(data, fileSubLookup);
+  let dataOutput = `${tmpFolder}${mf}`;
+  fs.writeFileSync(dataOutput, JSON.stringify(data));
+
+  execSync(
+      `aws s3 cp ${dataOutput} s3://${DATA_S3_BUCKET}/${DATA_DEST_PATH} --metadata-directive REPLACE --cache-control public,max-age=300,must-revalidate`,
+      { stdio: "inherit" }
+  );
+});
 
 execSync("git rev-parse HEAD > deployed-rev");
 execSync(
