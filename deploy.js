@@ -79,7 +79,7 @@ if (metaDiffStr.length === 0 && fileDiffStr.length === 0) {
 
 const fileHashLookup = {};
 const allAssetFiles = execSync(
-  `find ${LOCAL_ASSET_PATHS} -regextype egrep -regex ".*\\\\.(jpg|png|pdf)"`
+  `find ${LOCAL_ASSET_PATHS} -regextype egrep -regex ".*\\\\.(jpg|png|pdf|ico)"`
 ).toString();
 // console.log('allAssetFiles', allAssetFiles)
 allAssetFiles
