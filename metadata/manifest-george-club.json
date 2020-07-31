@@ -3,7 +3,7 @@
   "display": "minimal-ui",
   "name": "George",
   "short_name": "George",
-  "start_url": "/qr/george-club",
+  "start_url": "/",
   "theme_color": "#2d4091",
   "icons": [
     {

@@ -3,7 +3,7 @@
   "display": "minimal-ui",
   "name": "The Birley Clubs",
   "short_name": "The Birley Clubs",
-  "start_url": "/qr/annabels",
+  "start_url": "/",
   "theme_color": "#00873e",
   "icons": [
     {
