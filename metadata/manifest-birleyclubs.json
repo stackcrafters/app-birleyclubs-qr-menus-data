@@ -1,10 +1,10 @@
 {
-  "background_color": "#232856",
+  "background_color": "#00873e",
   "display": "minimal-ui",
   "name": "The Birley Clubs",
   "short_name": "The Birley Clubs",
-  "start_url": "/",
-  "theme_color": "#232856",
+  "start_url": "/qr",
+  "theme_color": "#00873e",
   "icons": [
     {
       "sizes": "48x48",
