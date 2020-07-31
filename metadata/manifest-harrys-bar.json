@@ -3,7 +3,7 @@
   "display": "minimal-ui",
   "name": "Harry's Bar",
   "short_name": "Harry's Bar",
-  "start_url": "/",
+  "start_url": "/qr/harrys-bar",
   "theme_color": "#543825",
   "icons": [
     {

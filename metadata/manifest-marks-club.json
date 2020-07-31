@@ -3,7 +3,7 @@
   "display": "minimal-ui",
   "name": "Mark's Club",
   "short_name": "Mark's Club",
-  "start_url": "/",
+  "start_url": "/qr/marks-club",
   "theme_color": "#232856",
   "icons": [
     {
