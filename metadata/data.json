@@ -13,7 +13,7 @@
     "cookieConsent": {
       "copy": {
         "summary": "We use cookies to ensure you get the best experience on our website.",
-        "allowButton": "Allow"
+        "allowButton": "Continue"
       }
     }
   },
