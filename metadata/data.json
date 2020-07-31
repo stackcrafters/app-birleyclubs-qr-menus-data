@@ -3,9 +3,9 @@
     "lang": "en",
     "titlePostfix": "The Birley Clubs",
     "description": "The Birley Clubs",
-    "favicon": "/_assets/static/annabels/icons/favicon.ico",
-    "manifest": "/_assets/static/birleyclubs/manifest.json",
-    "apple-touch-icon": "/_assets/static/annabels/icons/icon-192x192.png",
+    "favicon": "/_assets/annabels/icons/favicon.ico",
+    "manifest": "/_data/manifest-birleyclubs.json",
+    "apple-touch-icon": "/_assets/annabels/icons/icon-192x192.png",
     "theme-color": "#00873e"
   },
   "analytics": {
@@ -45,9 +45,9 @@
         "lang": "en",
         "titlePostfix": "Annabel's",
         "description": "Arguably one of the most elegant clubs in the world, Annabel’s – a Birley Club – has a global reputation that has been established over the past five…",
-        "favicon": "/_assets/static/annabels/icons/favicon.ico",
-        "manifest": "/_assets/static/annabels/manifest.json",
-        "apple-touch-icon": "/_assets/static/annabels/icons/icon-192x192.png",
+        "favicon": "/_assets/annabels/icons/favicon.ico",
+        "manifest": "/_data/manifest-annabels.json",
+        "apple-touch-icon": "/_assets/annabels/icons/icon-192x192.png",
         "theme-color": "#00873e"
       },
       "components": [
@@ -80,9 +80,9 @@
         "lang": "en",
         "titlePostfix": "George",
         "description": "George",
-        "favicon": "/_assets/static/george-club/icons/favicon.ico",
-        "manifest": "/_assets/static/george-club/manifest.json",
-        "apple-touch-icon": "/_assets/static/george-club/icons/icon-192x192.png",
+        "favicon": "/_assets/george-club/icons/favicon.ico",
+        "manifest": "/_data/manifest-george-club.json",
+        "apple-touch-icon": "/_assets/george-club/icons/icon-192x192.png",
         "theme-color": "#2d4091"
       },
       "components": [
@@ -116,9 +116,9 @@
         "lang": "en",
         "titlePostfix": "Harry's Bar",
         "description": "Harry's Bar",
-        "favicon": "/_assets/static/harrys-bar/icons/favicon.ico",
-        "manifest": "/_assets/static/harrys-bar/manifest.json",
-        "apple-touch-icon": "/_assets/static/harrys-bar/icons/icon-192x192.png",
+        "favicon": "/_assets/harrys-bar/icons/favicon.ico",
+        "manifest": "/_data/manifest-harrys-bar.json",
+        "apple-touch-icon": "/_assets/harrys-bar/icons/icon-192x192.png",
         "theme-color": "#543825"
       },
       "components": [
@@ -151,9 +151,9 @@
         "lang": "en",
         "titlePostfix": "Mark's Club",
         "description": "Mark's Club",
-        "favicon": "/_assets/static/marks-club/icons/favicon.ico",
-        "manifest": "/_assets/static/marks-club/manifest.json",
-        "apple-touch-icon": "/_assets/static/marks-club/icons/icon-192x192.png",
+        "favicon": "/_assets/marks-club/icons/favicon.ico",
+        "manifest": "/_data/manifest-marks-club.json",
+        "apple-touch-icon": "/_assets/marks-club/icons/icon-192x192.png",
         "theme-color": "#232856"
       },
       "components": [
