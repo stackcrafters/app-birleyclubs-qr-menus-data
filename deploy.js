@@ -63,7 +63,7 @@ if (res.length > 0) {
 }
 
 const fileDiffStr = execSync(
-  `git diff --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf)$" || echo ''`
+  `git diff --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf|ico)$" || echo ''`
 )
   .toString()
   .trim();
