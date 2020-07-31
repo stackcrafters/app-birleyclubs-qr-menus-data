@@ -1,4 +1,22 @@
 {
+  "siteMetadata": {
+    "lang": "en",
+    "titlePostfix": "The Birley Clubs",
+    "description": "The Birley Clubs",
+    "favicon": "/_assets/annabels/icons/favicon.ico",
+    "manifest": "/_assets/birleyclubs/manifest.json",
+    "apple-touch-icon": "/_assets/annabels/icons/icon-192x192.png",
+    "theme-color": "#00873e"
+  },
+  "analytics": {
+    "gaProperty": "UA-171650063-1",
+    "cookieConsent": {
+      "copy": {
+        "summary": "We use cookies to ensure you get the best experience on our website.",
+        "allowButton": "Allow"
+      }
+    }
+  },
   "templates": {
     "default": {
       "components": [
@@ -26,7 +44,11 @@
       "siteMetadata": {
         "lang": "en",
         "titlePostfix": "Annabel's",
-        "defaultDescription": "Arguably one of the most elegant clubs in the world, Annabel’s – a Birley Club – has a global reputation that has been established over the past five…"
+        "description": "Arguably one of the most elegant clubs in the world, Annabel’s – a Birley Club – has a global reputation that has been established over the past five…",
+        "favicon": "/_assets/annabels/icons/favicon.ico",
+        "manifest": "/_assets/annabels/manifest.json",
+        "apple-touch-icon": "/_assets/annabels/icons/icon-192x192.png",
+        "theme-color": "#00873e"
       },
       "components": [
         {
@@ -57,7 +79,11 @@
       "siteMetadata": {
         "lang": "en",
         "titlePostfix": "George",
-        "defaultDescription": "George"
+        "description": "George",
+        "favicon": "/_assets/george-club/icons/favicon.ico",
+        "manifest": "/_assets/george-club/manifest.json",
+        "apple-touch-icon": "/_assets/george-club/icons/icon-192x192.png",
+        "theme-color": "#2d4091"
       },
       "components": [
         {
@@ -89,7 +115,11 @@
       "siteMetadata": {
         "lang": "en",
         "titlePostfix": "Harry's Bar",
-        "defaultDescription": "Harry's Bar"
+        "description": "Harry's Bar",
+        "favicon": "/_assets/harrys-bar/icons/favicon.ico",
+        "manifest": "/_assets/harrys-bar/manifest.json",
+        "apple-touch-icon": "/_assets/harrys-bar/icons/icon-192x192.png",
+        "theme-color": "#00873e"
       },
       "components": [
         {
@@ -120,7 +150,11 @@
       "siteMetadata": {
         "lang": "en",
         "titlePostfix": "Mark's Club",
-        "defaultDescription": "Mark's Club"
+        "description": "Mark's Club",
+        "favicon": "/_assets/marks-club/icons/favicon.ico",
+        "manifest": "/_assets/marks-club/manifest.json",
+        "apple-touch-icon": "/_assets/marks-club/icons/icon-192x192.png",
+        "theme-color": "#00873e"
       },
       "components": [
         {
@@ -318,21 +352,6 @@
       }
     ]
   },
-
-  "siteMetadata": {
-    "lang": "en",
-    "titlePostfix": "The Birley Clubs"
-  },
-  "analytics": {
-    "gaProperty": "UA-171650063-1",
-    "cookieConsent": {
-      "copy": {
-        "summary": "We use cookies to ensure you get the best experience on our website.",
-        "allowButton": "Allow"
-      }
-    }
-  },
-
   "pages": {
     "/404": {
       "path": "/404",
