@@ -63,12 +63,12 @@ if (res.length > 0) {
 }
 
 const fileDiffStr = execSync(
-  `git diff --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf|ico)$" || echo ''`
+  `git diff --diff-filter=MACRT --name-only ${deployedRev} HEAD | grep -E "\\\\.(jpg|png|pdf|ico)$" || echo ''`
 )
   .toString()
   .trim();
 const metaDiffStr = execSync(
-  `git diff --name-only ${deployedRev} HEAD | grep "${META_FOLDER}" || echo ''`
+  `git diff --diff-filter=MACRT --name-only ${deployedRev} HEAD | grep "${META_FOLDER}" || echo ''`
 )
   .toString()
   .trim();
@@ -104,15 +104,20 @@ if (fileDiffStr.length > 0) {
   // console.log('fileDestLookup', fileDestLookup)
 
   //copy changed files to s3
-  fileDiffStr
-    .trim()
-    .split("\n")
-    .forEach((f) => {
-      execSync(
-        `aws s3 cp ${f} s3://${FILE_S3_BUCKET}/${fileDestLookup[f]} --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable`,
-        { stdio: "inherit" }
-      );
-    });
+    fileDiffStr
+        .trim()
+        .split("\n")
+        .forEach((f) => {
+          if(fileDestLookup[f]) {
+            execSync(
+              `aws s3 cp ${f} s3://${FILE_S3_BUCKET}/${fileDestLookup[f]} --metadata-directive REPLACE --cache-control public,max-age=31536000,immutable`,
+              {stdio: "inherit"}
+            );
+          }
+          else{
+            console.warn('No destination found for', f);
+          }
+        });
 } else {
   console.log("no changed assets, skipping asset s3 sync");
 }
