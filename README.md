@@ -33,6 +33,8 @@ message to explain the changes you're making. For example 'Updated Annabel's win
     
     Keep the setting to 'commit directly to the master branch'.
     
-    When you've finished, click 'Commit'. Within around 5 minutes you should see your changes applied to the QR sites.
+    When you've finished, click 'Commit'.
     
-    [Use this link to check if your menu update has applied correctly.](https://birleyclubs.app.stackcrafters.com/qr)
+    [You can use this link to check if your menu update has applied correctly.](https://birleyclubs.app.dev.stackcrafters.com/qr)
+    
+    Within around 5 minutes you should see your changes applied to the live QR sites.
