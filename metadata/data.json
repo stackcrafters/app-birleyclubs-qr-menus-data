@@ -650,6 +650,10 @@
                   "spacing": 2,
                   "items": [
                     {
+                      "label": "Weekday Breakfast Menu",
+                      "href": "/_assets/annabels/gr_weekday_breakfast_menu.pdf"
+                    },
+                    {
                       "label": "Weekday Lunch Menu",
                       "href": "/_assets/annabels/gr_weekday_lunch_menu.pdf"
                     },
