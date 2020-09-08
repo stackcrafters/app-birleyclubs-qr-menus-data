@@ -722,8 +722,12 @@
                   "spacing": 2,
                   "items": [
                     {
-                      "label": "Food Menu & Cocktails",
-                      "href": "/_assets/annabels/elephant_room_menu.pdf"
+                      "label": "Lunch Menu",
+                      "href": "/_assets/annabels/elephant_room_lunch_menu.pdf"
+                    },
+                    {
+                      "label": "Dinner Menu",
+                      "href": "/_assets/annabels/elephant_room_dinner_menu.pdf"
                     },
                     {
                       "label": "Wine List",
