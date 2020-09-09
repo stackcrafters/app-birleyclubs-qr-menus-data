@@ -890,8 +890,12 @@
                   "spacing": 2,
                   "items": [
                     {
-                      "label": "Food & Cocktails",
-                      "href": "/_assets/annabels/jungle_bar_and_nightclub_menu.pdf"
+                      "label": "Jungle Bar Menu",
+                      "href": "/_assets/annabels/jungle_bar_menu.pdf"
+                    },
+                    {
+                      "label": "Nightclub Menu",
+                      "href": "/_assets/annabels/nightclub_menu.pdf"
                     },
                     {
                       "label": "Wine List",
