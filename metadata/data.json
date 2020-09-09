@@ -778,11 +778,11 @@
                   "spacing": 2,
                   "items": [
                     {
-                      "label": "Matteo's Lunch Menu",
+                      "label": "Lunch Menu",
                       "href": "/_assets/annabels/matteos_lunch_menu.pdf"
                     },
                     {
-                      "label": "Matteo's Dinner Menu",
+                      "label": "Dinner Menu",
                       "href": "/_assets/annabels/matteos_dinner_menu.pdf"
                     },
                     {
