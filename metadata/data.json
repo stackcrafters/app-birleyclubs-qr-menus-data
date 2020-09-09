@@ -778,8 +778,12 @@
                   "spacing": 2,
                   "items": [
                     {
-                      "label": "A La Carte Menu",
-                      "href": "/_assets/annabels/matteos_menu.pdf"
+                      "label": "Matteo's Lunch Menu",
+                      "href": "/_assets/annabels/matteos_lunch_menu.pdf"
+                    },
+                    {
+                      "label": "Matteo's Dinner Menu",
+                      "href": "/_assets/annabels/matteos_dinner_menu.pdf"
                     },
                     {
                       "label": "Matteo's Wine List",
