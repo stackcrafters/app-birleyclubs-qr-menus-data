@@ -654,17 +654,9 @@
                       "href": "/_assets/annabels/gr_weekday_breakfast_menu.pdf"
                     },
                     {
-                      "label": "Lunch Menu",
-                      "href": "/_assets/annabels/gr_weekday_lunch_menu.pdf"
-                    },
-                    {
-                      "label": "Afternoon Menu",
-                      "href": "/_assets/annabels/gr_afternoon_menu.pdf"
-                    },
-                    {
-                      "label": "Dinner Menu",
-                      "href": "/_assets/annabels/gr_dinner_menu.pdf"
-                    },
+                      "label": "All Day Menu",
+                      "href": "/_assets/annabels/gr_all_day_menu.pdf"
+                    },                  
                     {
                       "label": "Dessert Menu",
                       "href": "/_assets/annabels/gr_dessert_menu.pdf"
