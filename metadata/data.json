@@ -666,6 +666,10 @@
                       "href": "/_assets/annabels/gr_sunday_lunch_menu.pdf"
                     },
                     {
+                      "label": "Snacks",
+                      "href": "/_assets/annabels/gr_snacks.pdf"
+                    },
+                    {
                       "label": "Wine List",
                       "href": "/_assets/annabels/annabels_full_wine_list.pdf"
                     },
@@ -888,6 +892,10 @@
                     {
                       "label": "Nightclub Menu",
                       "href": "/_assets/annabels/nightclub_menu.pdf"
+                    },
+                    {
+                      "label": "Snacks",
+                      "href": "/_assets/annabels/jungle_bar_snacks.pdf"
                     },
                     {
                       "label": "Wine List",
