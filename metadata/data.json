@@ -718,13 +718,9 @@
                   "spacing": 2,
                   "items": [
                     {
-                      "label": "Lunch Menu",
-                      "href": "/_assets/annabels/elephant_room_lunch_menu.pdf"
-                    },
-                    {
-                      "label": "Dinner Menu",
-                      "href": "/_assets/annabels/elephant_room_dinner_menu.pdf"
-                    },
+                      "label": "All Day Menu",
+                      "href": "/_assets/annabels/elephant_room_menu.pdf"
+                    },                  
                     {
                       "label": "Wine List",
                       "href": "/_assets/annabels/annabels_full_wine_list.pdf"
