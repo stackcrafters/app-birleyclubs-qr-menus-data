@@ -600,7 +600,7 @@
                       "to": "/qr/annabels/mexican"
                     },
                     {
-                      "title": "Jungle Bar & Nightclub",
+                      "title": "Jungle Bar & Club 46",
                       "img": "/_assets/annabels/images/nightclub.jpg",
                       "to": "/qr/annabels/jungle_bar_nightclub"
                     },
@@ -856,7 +856,7 @@
     "/qr/annabels/jungle_bar_nightclub": {
       "path": "/qr/annabels/jungle_bar_nightclub",
       "template": "annabels",
-      "title": "Jungle Bar & Nightclub - Menus",
+      "title": "Jungle Bar & Club 46 - Menus",
       "lang": "en",
       "components": [
         {
@@ -877,7 +877,7 @@
                       "variant": "h5",
                       "align": "center",
                       "gutterBottom": true,
-                      "components": ["Jungle Bar & Nightclub"]
+                      "components": ["Jungle Bar & Club 46"]
                     }
                   ]
                 },
@@ -890,7 +890,7 @@
                       "href": "/_assets/annabels/jungle_bar_menu.pdf"
                     },
                     {
-                      "label": "Nightclub Menu",
+                      "label": "Club 46 Menu",
                       "href": "/_assets/annabels/nightclub_menu.pdf"
                     },
                     {
