@@ -44,10 +44,6 @@ const recursivelyReplaceValues = (obj, replacements) => {
 };
 
 let deployedRev;
-execSync(
-    `aws s3api head-object --bucket ${FILE_S3_BUCKET} --key ${S3_DEPLOYED_REV_KEY} --debug || exit 0`
-    , {stdio: 'inherit'}
-);
 let res = execSync(
   `aws s3api head-object --bucket ${FILE_S3_BUCKET} --key ${S3_DEPLOYED_REV_KEY} || exit 0`
 );

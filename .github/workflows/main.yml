@@ -37,4 +37,5 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: us-east-1
       run: ./deploy.js prod fb1e2de7-e6df-4989-946b-0fe45ba2d971
