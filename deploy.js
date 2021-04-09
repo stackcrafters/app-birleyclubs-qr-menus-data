@@ -50,7 +50,7 @@ let res = execSync(
 if (res.length > 0) {
   execSync(
     `aws s3 cp s3://${FILE_S3_BUCKET}/${S3_DEPLOYED_REV_KEY} deployed-rev`
-  ); //, {stdio: 'inherit'}
+      , {stdio: 'inherit'});
   deployedRev = fs.readFileSync("deployed-rev").toString().trim();
   if (execSync("git rev-parse HEAD").toString().trim() === deployedRev) {
     console.log("up to date");
