@@ -44,13 +44,17 @@ const recursivelyReplaceValues = (obj, replacements) => {
 };
 
 let deployedRev;
+execSync(
+    `aws s3api head-object --bucket ${FILE_S3_BUCKET} --key ${S3_DEPLOYED_REV_KEY} || exit 0`
+    , {stdio: 'inherit'}
+);
 let res = execSync(
   `aws s3api head-object --bucket ${FILE_S3_BUCKET} --key ${S3_DEPLOYED_REV_KEY} || exit 0`
-    , {stdio: 'inherit'});
+);
 if (res.length > 0) {
   execSync(
     `aws s3 cp s3://${FILE_S3_BUCKET}/${S3_DEPLOYED_REV_KEY} deployed-rev`
-      , {stdio: 'inherit'});
+  ); //, {stdio: 'inherit'}
   deployedRev = fs.readFileSync("deployed-rev").toString().trim();
   if (execSync("git rev-parse HEAD").toString().trim() === deployedRev) {
     console.log("up to date");
