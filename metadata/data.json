@@ -654,13 +654,9 @@
                       "href": "/_assets/annabels/gr_weekday_breakfast_menu.pdf"
                     },
                     {
-                      "label": "Lunch Menu",
-                      "href": "/_assets/annabels/gr_lunch_menu.pdf"
+                      "label": "A La Carte Menu",
+                      "href": "/_assets/annabels/gr_brasserie_menu.pdf"
                     },
-                    {
-                      "label": "Dinner Menu",
-                      "href": "/_assets/annabels/gr_dinner_menu.pdf"
-                    },                                   
                     {
                       "label": "Sunday Roast Menu",
                       "href": "/_assets/annabels/gr_sunday_lunch_menu.pdf"
