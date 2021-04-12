@@ -1127,6 +1127,10 @@
                   "type": "ButtonList",
                   "spacing": 2,
                   "items": [
+                     {
+                      "label": "Aperitivo Afternoons",
+                      "href": "/_assets/harrys-bar/aperitivo_afternoons.pdf"
+                    },
                     {
                       "label": "A La Carte",
                       "href": "/_assets/harrys-bar/a_la_carte.pdf"
@@ -1175,6 +1179,10 @@
                   "type": "ButtonList",
                   "spacing": 2,
                   "items": [
+                    {
+                      "label": "Aperitivo Afternoons",
+                      "href": "/_assets/marks-club/aperitivo_afternoons.pdf"
+                    },
                     {
                       "label": "A La Carte",
                       "href": "/_assets/marks-club/a_la_carte.pdf"
