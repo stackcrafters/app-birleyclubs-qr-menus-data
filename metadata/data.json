@@ -676,6 +676,10 @@
                       "label": "Breakfast Menu",
                       "href": "/_assets/annabels/gr_weekday_breakfast_menu.pdf"
                     },
+                     {
+                      "label": "Aperitivos Afternoons Menu",
+                      "href": "/_assets/annabels/aperitivo_afternoons.pdf"
+                    },
                     {
                       "label": "A La Carte Menu",
                       "href": "/_assets/annabels/gr_a_la_carte_menu.pdf"
