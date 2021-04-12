@@ -677,7 +677,7 @@
                       "href": "/_assets/annabels/gr_weekday_breakfast_menu.pdf"
                     },
                      {
-                      "label": "Aperitivos Afternoons Menu",
+                      "label": "Aperitivo Afternoon Menu",
                       "href": "/_assets/annabels/aperitivo_afternoons.pdf"
                     },
                     {
@@ -1056,7 +1056,7 @@
                   "spacing": 2,
                   "items": [
                     {
-                      "label": "Aperitivo Afternoons",
+                      "label": "Aperitivo Afternoon Menu",
                       "href": "/_assets/george-club/aperitivo_afternoons.pdf"
                     },
                     {
@@ -1128,7 +1128,7 @@
                   "spacing": 2,
                   "items": [
                      {
-                      "label": "Aperitivo Afternoons",
+                      "label": "Aperitivo Afternoon Menu",
                       "href": "/_assets/harrys-bar/aperitivo_afternoons.pdf"
                     },
                     {
