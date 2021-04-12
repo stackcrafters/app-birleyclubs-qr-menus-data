@@ -580,34 +580,57 @@
                   "cols": 1,
                   "items": [
                     {
-                      "title": "The Garden & Rose Room",
+                      "title": "The Garden",
                       "img": "/_assets/annabels/images/garden_and_rose.jpg",
                       "to": "/qr/annabels/garden_rose"
-                    },
-                    {
-                      "title": "Elephant Room",
-                      "img": "/_assets/annabels/images/elephant.jpg",
-                      "to": "/qr/annabels/elephant"
-                    },
-                    {
-                      "title": "Matteo’s",
-                      "img": "/_assets/annabels/images/matteos.jpg",
-                      "to": "/qr/annabels/matteos"
-                    },
-                    {
-                      "title": "The Mexican",
-                      "img": "/_assets/annabels/images/mexican.jpg",
-                      "to": "/qr/annabels/mexican"
-                    },
-                    {
-                      "title": "Jungle Bar & Club 46",
-                      "img": "/_assets/annabels/images/nightclub.jpg",
-                      "to": "/qr/annabels/jungle_bar_nightclub"
                     },
                     {
                       "title": "Humidor & Smoking Terrace",
                       "img": "/_assets/annabels/images/humidor.jpg",
                       "to": "/qr/annabels/humidor_smoking_terrace"
+                    }
+                  ]
+                },
+                {
+                  "type": "Box",
+                  "display": "none",
+                  "components": [
+                    {
+                      "type": "GridList",
+                      "cellHeight": 180,
+                      "cols": 1,
+                      "items": [
+                        {
+                          "title": "The Garden & Rose Room",
+                          "img": "/_assets/annabels/images/garden_and_rose.jpg",
+                          "to": "/qr/annabels/garden_rose"
+                        },
+                        {
+                          "title": "Elephant Room",
+                          "img": "/_assets/annabels/images/elephant.jpg",
+                          "to": "/qr/annabels/elephant"
+                        },
+                        {
+                          "title": "Matteo’s",
+                          "img": "/_assets/annabels/images/matteos.jpg",
+                          "to": "/qr/annabels/matteos"
+                        },
+                        {
+                          "title": "The Mexican",
+                          "img": "/_assets/annabels/images/mexican.jpg",
+                          "to": "/qr/annabels/mexican"
+                        },
+                        {
+                          "title": "Jungle Bar & Club 46",
+                          "img": "/_assets/annabels/images/nightclub.jpg",
+                          "to": "/qr/annabels/jungle_bar_nightclub"
+                        },
+                        {
+                          "title": "Humidor & Smoking Terrace",
+                          "img": "/_assets/annabels/images/humidor.jpg",
+                          "to": "/qr/annabels/humidor_smoking_terrace"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -620,7 +643,7 @@
     "/qr/annabels/garden_rose": {
       "path": "/qr/annabels/garden_rose",
       "template": "annabels",
-      "title": "The Garden & Rose Room - Menus",
+      "title": "The Garden - Menus",
       "lang": "en",
       "components": [
         {
@@ -641,7 +664,7 @@
                       "variant": "h5",
                       "align": "center",
                       "gutterBottom": true,
-                      "components": ["The Garden & Rose Room"]
+                      "components": ["The Garden"]
                     }
                   ]
                 },
@@ -672,7 +695,7 @@
                     {
                       "label": "Spirits List",
                       "href": "/_assets/annabels/gr_sprits_list.pdf"
-                    }                 
+                    }
                   ]
                 }
               ]
@@ -716,7 +739,7 @@
                     {
                       "label": "All Day Menu",
                       "href": "/_assets/annabels/elephant_room_menu.pdf"
-                    },                  
+                    },
                     {
                       "label": "Wine List",
                       "href": "/_assets/annabels/annabels_full_wine_list.pdf"
