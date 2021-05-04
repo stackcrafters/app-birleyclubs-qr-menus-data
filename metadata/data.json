@@ -683,7 +683,11 @@
                     {
                       "label": "A La Carte Menu",
                       "href": "/_assets/annabels/gr_a_la_carte_menu.pdf"
-                    },
+                    },                    
+                    {
+                      "label": "Dessert Menu",
+                      "href": "/_assets/annabels/gr_dessert_menu.pdf"
+                    },                    
                     {
                       "label": "Sunday Roast Menu",
                       "href": "/_assets/annabels/gr_sunday_lunch_menu.pdf"
