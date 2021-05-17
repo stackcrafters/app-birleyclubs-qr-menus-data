@@ -573,27 +573,9 @@
                       "components": ["MENUS"]
                     }
                   ]
-                },
+                },              
                 {
-                  "type": "GridList",
-                  "cellHeight": 180,
-                  "cols": 1,
-                  "items": [
-                    {
-                      "title": "The Garden",
-                      "img": "/_assets/annabels/images/garden_and_rose.jpg",
-                      "to": "/qr/annabels/garden_rose"
-                    },
-                    {
-                      "title": "Humidor & Smoking Terrace",
-                      "img": "/_assets/annabels/images/humidor.jpg",
-                      "to": "/qr/annabels/humidor_smoking_terrace"
-                    }
-                  ]
-                },
-                {
-                  "type": "Box",
-                  "display": "none",
+                  "type": "Box",               
                   "components": [
                     {
                       "type": "GridList",
